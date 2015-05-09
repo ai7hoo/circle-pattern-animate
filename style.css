@@ -1,0 +1,225 @@
+/*
+* Author: ai7hoo
+* Name: Css3 Animation Demo
+* Site: http://github.com/ai7hoo
+* Description: 仿照首页的那个用SVG做的，这是用CSS3做的。在chrome下好模糊，Firefox下比较清晰流畅。为什么呢？什么嘛？谁能告诉我，是浏览器渲染的问题吗。
+* Tags: css3 animated 练习
+* Note: 此页面支持webkit，没有加moz
+*/
+body {
+	background: #222428;
+}
+.container {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 240px;
+}
+.b {
+	border: 3px solid #00ffff;
+	border-radius: 50%;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 100px;
+	left: 450px;
+}
+.n1 {
+	-webkit-transform: scale(1);
+	-webkit-animation: myFirst 2s;
+	-webkit-animation-iteration-count: infinite;
+}
+.n2 {
+	-webkit-transform: scale(2);
+	-webkit-animation: mySecond 4s;
+	-webkit-animation-iteration-count: infinite;
+}
+.n3 {
+	-webkit-transform: scale(3);
+	-webkit-animation: myThree 4s;
+	-webkit-animation-iteration-count: infinite;
+}
+.n4 {
+	border: 1px solid #999999;
+	-webkit-transform: scale(1);
+	-webkit-animation: myFour 6s;
+	-webkit-animation-iteration-count: infinite;
+}
+.c {
+	border-radius: 50%;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 450px;
+	top: 50px;
+	border: 2px solid #444444;
+	-webkit-transform-origin: bottom center;
+}
+.c1 {
+	-webkit-transform: scale(3.5) rotate(0deg);
+	-webkit-animation: c-1 6s; 
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+.c2 {
+	-webkit-transform: scale(3.5) rotate(60deg);
+	-webkit-animation: c-2 6s; 
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+.c3 {
+	-webkit-transform: scale(3.5) rotate(120deg);
+	-webkit-animation: c-3 6s; 
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+.c4 {
+	-webkit-transform: scale(3.5) rotate(180deg);
+	-webkit-animation: c-4 6s; 
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+.c5 {
+	-webkit-transform: scale(3.5) rotate(240deg);
+	-webkit-animation: c-5 6s; 
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+.c6 {
+	-webkit-transform: scale(3.5) rotate(300deg);
+	-webkit-animation: c-6 6s; 
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+
+@-webkit-keyframes myFirst
+{
+	0% {
+		-webkit-transform: scale(1);
+	}
+	50% {
+		-webkit-transform: scale(2);
+	}
+	100% {
+		-webkit-transform: scale(1);
+	}
+}
+
+@-webkit-keyframes mySecond
+{
+	0% {
+		-webkit-transform: scale(2);
+	}
+	50% {
+		-webkit-transform: scale(5);
+	}
+	100% {
+		-webkit-transform: scale(2);
+	}
+}
+
+@-webkit-keyframes myThree
+{
+	0% {
+		-webkit-transform: scale(3);
+	}
+	25% {
+		-webkit-transform: scale(4);
+	}
+	50% {
+		-webkit-transform: scale(3);
+	}
+	75% {
+		-webkit-transform: scale(2);
+	}
+	100% {
+		-webkit-transform: scale(3);
+	}
+}
+@-webkit-keyframes myFour
+{
+	0% {
+		-webkit-transform: scale(1);
+	}
+	50% {
+		-webkit-transform: scale(6);
+	}
+	100% {
+		-webkit-transform: scale(1);
+	}
+}
+
+
+@-webkit-keyframes c-1
+{
+	0% {
+		-webkit-transform: scale(3.5) rotate(0deg);
+	}
+	50% {
+		-webkit-transform: scale(3.5) rotate(180deg);
+	}
+	100% {
+		-webkit-transform: scale(3.5) rotate(360deg);
+	}
+}
+@-webkit-keyframes c-2
+{
+	0% {
+		-webkit-transform: scale(3.5) rotate(60deg);
+	}
+	50% {
+		-webkit-transform: scale(3.5) rotate(240deg);
+	}
+	100% {
+		-webkit-transform: scale(3.5) rotate(420deg);
+	}
+}
+@-webkit-keyframes c-3
+{
+	0% {
+		-webkit-transform: scale(3.5) rotate(120deg);
+	}
+	50% {
+		-webkit-transform: scale(3.5) rotate(300deg);
+	}
+	100% {
+		-webkit-transform: scale(3.5) rotate(480deg);
+	}
+}
+@-webkit-keyframes c-4
+{
+	0% {
+		-webkit-transform: scale(3.5) rotate(180deg);
+	}
+	50% {
+		-webkit-transform: scale(3.5) rotate(360deg);
+	}
+	100% {
+		-webkit-transform: scale(3.5) rotate(540deg);
+	}
+}
+@-webkit-keyframes c-5
+{
+	0% {
+		-webkit-transform: scale(3.5) rotate(240deg);
+	}
+	50% {
+		-webkit-transform: scale(3.5) rotate(420deg);
+	}
+	100% {
+		-webkit-transform: scale(3.5) rotate(600deg);
+	}
+}
+@-webkit-keyframes c-6
+{
+	0% {
+		-webkit-transform: scale(3.5) rotate(300deg);
+	}
+	50% {
+		-webkit-transform: scale(3.5) rotate(480deg);
+	}
+	100% {
+		-webkit-transform: scale(3.5) rotate(660deg);
+	}
+}
